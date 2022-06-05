@@ -1,11 +1,16 @@
 {
-  "name": "docsifyzh-cn",
+  "name": "think-in-java",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/yzqtpl/docsifyzh-cn.git",
   "author": "yzqdev <yzqdev@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "docsify serve docs -p 5400"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress2-plugin-full-text-search": "latest",
+    "vuepress": "next",
+    "vuepress-theme-hope": "next"
   }
 }
